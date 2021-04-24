@@ -36,3 +36,21 @@
     background-color: rgb(253, 193, 50)
   }
   
+  @media (max-width: 750px){
+    
+    .welcomeBody{
+        padding-top: 200px;
+    }
+
+    .welcomeToOurStudio{
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .niceToMeetYou{
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+
+  }

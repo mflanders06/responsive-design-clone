@@ -35,6 +35,10 @@ nav{
     height: 15px;
     width: 15px;
   }
+
+  .menuOpen{
+      display: none;
+  }
   
   @media (max-width: 785px){
       .navOptions{
@@ -43,5 +47,10 @@ nav{
 
       .menuButton{
           display:inline-block;
+      }
+
+      .menuOpen{
+        display: inline-block;
+        color: blue;
       }
   }
