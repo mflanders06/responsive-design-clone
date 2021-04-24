@@ -13,6 +13,7 @@ class Nav extends Component{
     clickHandler = () =>{
         
         this.setState({ menuClick: !this.state.menuClick });
+        console.log('I clicked a button');
     }
 
     render(){
@@ -30,14 +31,12 @@ class Nav extends Component{
                     <li>CONTACT</li>
 
                 </ul>
-                <button className="menuButton">
+                <button className="menuButton" onClick={this.clickHandler}>
                     <span>MENU</span>
                     <img
                         className="hamburgerIcon"
                         src="https://www.vhv.rs/dpng/d/388-3884885_hamburger-menu-icon-white-shoreline-city-church-dallas.png"
-                        alt="hamburger menu"
-                        onClick={this.clickHandler}
-                        >
+                        alt="hamburger menu">
                     </img>
                 </button>
                 <menu className={menuClass}>
