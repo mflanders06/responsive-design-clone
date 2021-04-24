@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './Nav.css';
 
 class Nav extends Component{
     constructor(){
@@ -20,7 +21,11 @@ class Nav extends Component{
                 </ul>
                 <button className="menuButton">
                     <span>MENU</span>
-                    <img src="hamburger-menu.jpeg" alt="hamburger menu"></img>
+                    <img
+                        className="hamburgerIcon"
+                        src="https://www.vhv.rs/dpng/d/388-3884885_hamburger-menu-icon-white-shoreline-city-church-dallas.png"
+                        alt="hamburger menu">
+                    </img>
                 </button>
             </nav>
         )

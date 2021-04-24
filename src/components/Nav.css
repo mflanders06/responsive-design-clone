@@ -1,0 +1,47 @@
+
+/*nav*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+  }
+  
+  .navOptions{
+    display: flex;
+    justify-content: space-around;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+  }
+  
+  .navOptions > li{
+    margin: 20px;
+  }
+  
+  .startBootstrap{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 35px;
+  
+    color: rgb(248, 210, 88);
+  }
+
+  .menuButton{
+      display: none;
+  }
+  
+  .hamburgerIcon{
+    height: 15px;
+    width: 15px;
+  }
+  
+  @media (max-width: 785px){
+      .navOptions{
+          display: none;
+      }
+
+      .menuButton{
+          display:inline-block;
+      }
+  }
