@@ -1,3 +1,10 @@
+/*Index: 
+    Main app, general script tag styling
+    Nav
+    Welcome page
+*/
+
+/*Main app*/
 .App {
   background-image: URL(Background.jpeg);
   box-sizing: border-box;
@@ -5,6 +12,15 @@
   color: white;
 }
 
+button{
+  background-color: rgb(248, 210, 88);
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+/*nav*/
 nav{
   display: flex;
   justify-content: space-around;
@@ -32,20 +48,13 @@ nav{
   color: rgb(248, 210, 88);
 }
 
+/*Welcome page*/
 .welcomeBody{
   padding-top: 450px;
   padding-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-button{
-  background-color: rgb(248, 210, 88);
-  color:rgb(255, 255, 255);
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
 }
 
 .welcomeToOurStudio{
@@ -74,6 +83,10 @@ button{
 .tellMeMore:hover{
   background-color: rgb(253, 193, 50)
 }
+
+
+
+
 /*
 .App-logo {
   height: 40vmin;

@@ -18,6 +18,10 @@ class Nav extends Component{
                     <li>CONTACT</li>
 
                 </ul>
+                <button className="menuButton">
+                    <span>MENU</span>
+                    <img src="hamburger-menu.jpeg" alt="hamburger menu"></img>
+                </button>
             </nav>
         )
     }
