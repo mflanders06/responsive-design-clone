@@ -2,10 +2,17 @@
 /*nav*/
 nav{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
     position: fixed;
-    width: 100vw;
+  }
+
+  .navBar{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      position: fixed;
+      width: 100vw;
   }
   
   .navOptions{
@@ -18,6 +25,10 @@ nav{
   
   .navOptions > li{
     margin: 20px;
+  }
+
+  .navOptions > li:hover{
+    color: rgb(253, 193, 50)
   }
   
   .startBootstrap{
@@ -53,6 +64,26 @@ nav{
 
       .menuOpen{
         display: inline-block;
-        color: blue;
+        margin-top: 60px;
       }
+
+      .menulinks{
+        background-color: rgb( 29, 29, 32 );
+        width: 100vw;
+        transition-property: translateY;
+        transition-duration: 3s;
+        transition-timing-function: linear;
+      }
+
+      @keyframes menuSlideOpen {
+         
+
+        0%{
+          transform: translateY(-200%);
+        }
+        100%{
+          transfrom: translateY(100%);
+        }
+      }
+
   }
