@@ -53,6 +53,10 @@ nav{
 
   
   @media (max-width: 785px){
+      nav{
+        background-color: rgb( 29, 29, 32 );
+      }
+
       .navOptions{
           display: none;
       }
@@ -67,23 +71,30 @@ nav{
         margin-top: 60px;
       }
 
-      .menulinks{
+      .menuLinks{
         background-color: rgb( 29, 29, 32 );
         width: 100vw;
-        transition-property: translateY;
-        transition-duration: 3s;
+        animation-duration: 3s;
         transition-timing-function: linear;
+        animation-name: menuSlideOpen;
+        
+      }
+
+      .menuLinks > li:hover{
+        color: rgb(253, 193, 50)
       }
 
       @keyframes menuSlideOpen {
          
 
         0%{
-          transform: translateY(-200%);
+          transform: translateY(-100%);
         }
         100%{
-          transfrom: translateY(100%);
+          transform: translateY(0%);
         }
       }
+
+      
 
   }
